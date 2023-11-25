@@ -9,6 +9,10 @@ import { monomaniacFont } from "../../utils/font";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
+  const handleClose = () => {
+    setNav(!nav);
+  };
+
   return (
     <div className="container inset-0 fixed flex justify-between items-center w-full h-[75px] bg-theme-green">
       {/* Hamburger On Mobile  */}
@@ -40,32 +44,39 @@ const Navbar = () => {
 					<h2 className="text-3xl">Isi Website</h2>
 
           <Link href={'/tarunatani'}>
-            <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+            <button onClick={handleClose} className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
                 <p className={monomaniacFont.className}>Taruna Tani</p>
             </button>
           </Link>
 
           <Link href={'/banksampah'}>
-            <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+            <button onClick={handleClose} className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
               <p className={monomaniacFont.className}>Bank Sampah</p>
             </button>
           </Link>
 
-          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
-            <p className={monomaniacFont.className}>Kontak</p>
-          </button>
+          <Link href={'/kontak'}>
+            <button onClick={handleClose} className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+              <p className={monomaniacFont.className}>Kontak</p>
+            </button>
+          </Link>
 
-          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+          <button onClick={handleClose} className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
             <p className={monomaniacFont.className}>Prestasi</p>
           </button>
 
-          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
-            <p className={monomaniacFont.className}>Produk</p>
-          </button>
 
-          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
-            <p className={monomaniacFont.className}>Tentang Kami</p>
-          </button>
+          <Link href="/produk">
+            <button onClick={handleClose} className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+              <p className={monomaniacFont.className}>Produk</p>
+            </button>
+          </Link>
+
+          <Link href={'/tentangkami'}>
+            <button onClick={handleClose} className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+              <p className={monomaniacFont.className}>Tentang Kami</p>
+            </button>
+          </Link>
 
           <div className="relative w-[430px] h-[80px] z-[-1]">
             <Image 

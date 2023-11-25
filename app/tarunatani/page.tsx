@@ -1,5 +1,6 @@
 import { moulFont } from "@/utils/font"
 import Image from "next/image"
+import Link from "next/link"
 
 const page = () => {
   return (
@@ -17,10 +18,12 @@ const page = () => {
             <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-2">
               <div className={moulFont.className}>Video Edukasi</div>
             </div>
-
-            <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-3">
-              <div className={moulFont.className}>Jenis Tanaman</div>
-            </div>
+            
+            <Link href="/jenistanaman">
+              <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-3">
+                <div className={moulFont.className}>Jenis Tanaman</div>
+              </div>
+            </Link>
 
 
         </div>
