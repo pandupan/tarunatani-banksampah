@@ -39,13 +39,17 @@ const Navbar = () => {
 
 					<h2 className="text-3xl">Isi Website</h2>
 
-          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
-            <p className={monomaniacFont.className}>Taruna Tani</p>
-          </button>
+          <Link href={'/tarunatani'}>
+            <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+                <p className={monomaniacFont.className}>Taruna Tani</p>
+            </button>
+          </Link>
 
-          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
-            <p className={monomaniacFont.className}>Bank Sampah</p>
-          </button>
+          <Link href={'/banksampah'}>
+            <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+              <p className={monomaniacFont.className}>Bank Sampah</p>
+            </button>
+          </Link>
 
           <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
             <p className={monomaniacFont.className}>Kontak</p>

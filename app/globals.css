@@ -82,8 +82,58 @@
   background-size: cover;
 }
 
+.bg-card-1{
+  background-image: url("https://i.ibb.co/xjbwL5z/Rectangle-3.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-card-2{
+  background-image: url("https://i.ibb.co/bQxPdss/Rectangle-5.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-card-3{
+  background-image: url("https://i.ibb.co/bQxPdss/Rectangle-5.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-card-4{
+  background-image: url("https://i.ibb.co/vwtd9bd/Rectangle-3-1.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-card-5{
+  background-image: url("https://i.ibb.co/q1mr0n2/Rectangle-5-1.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 320px) {
   .bg-hero {
+    background-position:50%; 
+  }
+  .bg-card-1 {
+    background-position:50%; 
+  }
+  .bg-card-2 {
+    background-position:50%; 
+  }
+  .bg-card-3 {
+    background-position:50%; 
+  }
+  .bg-card-4 {
+    background-position:50%; 
+  }
+  .bg-card-5 {
     background-position:50%; 
   }
 }

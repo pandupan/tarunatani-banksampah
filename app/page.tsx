@@ -1,3 +1,4 @@
+import Link from "next/link"
 import {patuaFont} from "../utils/font"
 
 export default function Home() {
@@ -19,9 +20,11 @@ export default function Home() {
               &quot;Taruna tani kita menari dengan kegembiraan di tanah subur. Bersama bank sampah, kita beriringan melodi kebaikan untuk lingkungan yang lebih baik.&quot;
             </p>
         </div>
-        <button className="bg-theme-green rounded-2xl text-white px-10 py-2 border-solid border-2 border-white mt-24">
-          Masuk
-        </button>
+        <Link href="/profile">
+          <button className="bg-theme-green rounded-2xl text-white px-10 py-2 border-solid border-2 border-white mt-24">
+            Masuk
+          </button>
+        </Link>
       </div>
     </main>
   )
