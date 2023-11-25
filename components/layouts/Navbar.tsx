@@ -3,7 +3,8 @@
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
 import Link from "next/link";
-import ButtonNav from "@/ui/ButtonNav";
+import Image from "next/image";
+import { monomaniacFont } from "../../utils/font";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -30,13 +31,48 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "container  fixed top-[75px] left-0 right-0 bottom-0 flex justify-center items-center h-[100vh] bg-[#fdfcf1] border border-theme-green ease-in-out duration-700 z-[80]"
-            : "container fixed top-[-200%] left-0 right-0 bottom-0 flex justify-center items-center h-[100vh] bg-[#fdfcf1] border border-theme-green ease-in-out duration-700 z-[80]"
+            ? "container  fixed top-[75px] left-0 right-0 bottom-0 flex justify-center items-center h-[1200vh] bg-[#fdfcf1] border border-theme-green ease-in-out duration-700 z-[80]"
+            : "container fixed top-[-200%] left-0 right-0 bottom-0 flex justify-center items-center h-[120vh] bg-[#fdfcf1] border border-theme-green ease-in-out duration-700 z-[80]"
         }
       >
-				<div className="flex flex-col justify-center w-[320px]">
-					<h2>Isi Website</h2>
-					<ButtonNav title="Taruna Tani"/>
+				<div className="flex flex-col py-10 mb-10 items-center w-[320px] h-full space-y-6">
+
+					<h2 className="text-3xl">Isi Website</h2>
+
+          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+            <p className={monomaniacFont.className}>Taruna Tani</p>
+          </button>
+
+          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+            <p className={monomaniacFont.className}>Bank Sampah</p>
+          </button>
+
+          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+            <p className={monomaniacFont.className}>Kontak</p>
+          </button>
+
+          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+            <p className={monomaniacFont.className}>Prestasi</p>
+          </button>
+
+          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+            <p className={monomaniacFont.className}>Produk</p>
+          </button>
+
+          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+            <p className={monomaniacFont.className}>Tentang Kami</p>
+          </button>
+
+          <div className="relative w-[430px] h-[80px] z-[-1]">
+            <Image 
+              src="/images/leaf-1.png"
+              alt="leaf"
+              fill={true}
+            />
+          </div>
+
+          <div className="w-[432px] min-h-[5vh] bg-theme-green shadow-inside"/>
+
 				</div>
 
 			</div>
