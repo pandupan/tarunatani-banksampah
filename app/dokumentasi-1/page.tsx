@@ -1,5 +1,6 @@
 import { monomaniacFont } from "@/utils/font"
 import Image from "next/image"
+import Link from "next/link"
 
 const page = () => {
   return (
@@ -11,9 +12,11 @@ const page = () => {
           Lihat Dokumentasi Kami?
         </h2>
 
-        <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[155px] border border-black text-white">
-            <p className={monomaniacFont.className}>Dokumentasi</p>
-        </button>
+        <Link href="/dokumentasi-2">
+          <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[155px] border border-black text-white">
+              <p className={monomaniacFont.className}>Dokumentasi</p>
+          </button>
+        </Link>
 
         <button className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
             <p className={monomaniacFont.className}>Tautan Youtube</p>

@@ -61,9 +61,11 @@ const Navbar = () => {
             </button>
           </Link>
 
-          <button onClick={handleClose} className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
-            <p className={monomaniacFont.className}>Prestasi</p>
-          </button>
+          <Link href={"/dokumentasi-1"}>
+            <button onClick={handleClose} className="bg-theme-green text-xl rounded-3xl w-[330px] h-[55px] border border-black text-white">
+              <p className={monomaniacFont.className}>Prestasi</p>
+            </button>
+          </Link>
 
 
           <Link href="/produk">
