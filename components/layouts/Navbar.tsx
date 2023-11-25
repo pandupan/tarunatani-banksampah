@@ -1,6 +1,7 @@
 "use client";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiFillHome } from "react-icons/ai";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -28,6 +29,9 @@ const Navbar = () => {
             onClick={() => setNav(!nav)}
           />
         )}
+        <Link href="/">
+          <AiFillHome size={30} />
+        </Link>
       </div>
       {/* End Hamburger On Mobile  */}
 
