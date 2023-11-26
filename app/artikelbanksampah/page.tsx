@@ -36,7 +36,7 @@ import 'swiper/css/pagination'
           />
       </div>
 
-      <div className="flex flex-col justify-center pt-[-1] items-center w-[430px] h-full space-y-8 px-2 mx-auto">
+      <div className="flex flex-col justify-center pt-[-1] items-center  w-[320px] sm:min-w-[430px] h-full space-y-8 px-2 mx-auto">
 
         <h2 className="text-3xl text-left underline-offset-4 mt-10">Artikel Terbaru</h2>
 
