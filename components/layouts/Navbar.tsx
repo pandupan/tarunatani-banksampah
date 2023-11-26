@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container inset-0 fixed flex justify-between items-center w-full h-[75px] bg-theme-green">
+    <div className="container inset-0 fixed flex justify-between items-center w-full h-[75px] bg-theme-green z-50">
       {/* Hamburger On Mobile  */}
       <div className="flex  justify-between items-center w-full h-[75px]  px-[25px] z-50 text-white">
         {nav ? (

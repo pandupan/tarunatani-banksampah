@@ -11,9 +11,11 @@ const page = () => {
 
             <h2 className="text-2xl text-center">Explore Pengetahuan Taruna Tani</h2>
 
-            <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-1">
-              <div className={moulFont.className}>Artikel Edukasi</div>
-            </div>
+            <Link href="/artikeltarunatani">
+              <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-1">
+                <div className={moulFont.className}>Artikel Edukasi</div>
+              </div>
+            </Link>
 
             <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-2">
               <div className={moulFont.className}>Video Edukasi</div>
