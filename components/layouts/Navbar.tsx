@@ -40,7 +40,7 @@ const Navbar = () => {
         className={
           nav
             ? "container  fixed top-[75px] left-0 right-0 bottom-0 flex justify-center items-center h-[1200vh] bg-[#fdfcf1] border border-theme-green ease-in-out duration-700 z-[80]"
-            : "container fixed top-[-120%] left-0 right-0 bottom-0 flex justify-center items-center h-[120vh] bg-[#fdfcf1] border border-theme-green ease-in-out duration-700 z-[80]"
+            : "container fixed top-[-200%] left-0 right-0 bottom-0 flex justify-center items-center h-[120vh] bg-[#fdfcf1] border border-theme-green ease-in-out duration-700 z-[80]"
         }
       >
 				<div className="flex flex-col py-10 mb-10 items-center w-[320px] h-full space-y-6">
