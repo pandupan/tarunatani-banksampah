@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
-import { image, imageArtikel } from "@/lib/image";
+import { cardBibit, cardIot, image, imageArtikel } from "@/lib/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -95,6 +95,54 @@ import 'swiper/css/pagination'
           className="h-[230px] w-full rounded-lg text-white"
         >
           {imageArtikel.map((image,index) =>(
+            <SwiperSlide key={index}>
+              <div className="flex w-full h-full items-center justify-center">
+                <Link href={image.link}>
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    className="block h-full w-full object-cover"
+                  />
+                </Link>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <h2 className="text-3xl text-left underline-offset-4 mt-10">2. Bibit</h2>
+        
+        <Swiper
+          navigation
+          pagination={{type : "fraction"}}
+          modules={[Navigation, Pagination, Autoplay]}
+          autoplay={{delay : 3000}}
+          className="h-[230px] w-full rounded-lg text-white"
+        >
+          {cardBibit.map((image,index) =>(
+            <SwiperSlide key={index}>
+              <div className="flex w-full h-full items-center justify-center">
+                <Link href={image.link}>
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    className="block h-full w-full object-cover"
+                  />
+                </Link>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <h2 className="text-3xl text-left underline-offset-4 mt-10">3. Teknologi Pertanian</h2>
+        
+        <Swiper
+          navigation
+          pagination={{type : "fraction"}}
+          modules={[Navigation, Pagination, Autoplay]}
+          autoplay={{delay : 3000}}
+          className="h-[230px] w-full rounded-lg text-white"
+        >
+          {cardIot.map((image,index) =>(
             <SwiperSlide key={index}>
               <div className="flex w-full h-full items-center justify-center">
                 <Link href={image.link}>

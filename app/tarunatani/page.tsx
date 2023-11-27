@@ -17,9 +17,11 @@ const page = () => {
               </div>
             </Link>
 
-            <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-2">
-              <div className={moulFont.className}>Video Edukasi</div>
-            </div>
+            <Link href="/videotarunatani">
+              <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-2">
+                <div className={moulFont.className}>Video Edukasi</div>
+              </div>
+            </Link>
             
             <Link href="/jenistanaman">
               <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-3">

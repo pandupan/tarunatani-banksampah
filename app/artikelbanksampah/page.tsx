@@ -61,7 +61,9 @@ import 'swiper/css/pagination'
             </SwiperSlide>
           ))}
         </Swiper>
-
+            
+            
+        <h2 className="text-3xl text-left underline-offset-4 mt-10">1. Daur Ulang</h2>
         <Swiper
           navigation
           pagination={{type : "fraction"}}
@@ -85,7 +87,7 @@ import 'swiper/css/pagination'
         </Swiper>
 
 
-        <h2 className="text-3xl text-left underline-offset-4 mt-10">1. Tanah</h2>
+        <h2 className="text-3xl text-left underline-offset-4 mt-10">2. Jenis Jenis Sampah</h2>
         
         <Swiper
           navigation
