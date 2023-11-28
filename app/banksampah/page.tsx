@@ -22,9 +22,9 @@ const page = () => {
                 </div>
             </Link>
 
-            <Link href="/videobanksampah">
+            <Link href="/jenissampah">
                 <div className="rounded-[45px] w-[332px] h-[163px] border text-white flex justify-center items-center text-2xl bg-card-5">
-                    <div className={moulFont.className}>Video Edukasi</div>
+                    <div className={moulFont.className}>Jenis Sampah</div>
                 </div>
             </Link>
 
