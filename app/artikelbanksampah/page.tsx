@@ -45,7 +45,7 @@ import 'swiper/css/pagination'
           pagination={{type : "fraction"}}
           modules={[Navigation, Pagination, Autoplay]}
           autoplay={{delay : 3000}}
-          className="h-[230px] w-full rounded-lg text-white"
+          className="h-[230px] w-[400px] rounded-lg text-white"
         >
           {imageArtikelBank.map((image,index) =>(
             <SwiperSlide key={index}>
@@ -69,7 +69,7 @@ import 'swiper/css/pagination'
           pagination={{type : "fraction"}}
           modules={[Navigation, Pagination, Autoplay]}
           autoplay={{delay : 3000}}
-          className="h-[230px] w-full rounded-lg text-white"
+          className="h-[230px] w-[400px] rounded-lg text-white"
         >
           {imageDaurUlang.map((image,index) =>(
             <SwiperSlide key={index}>
@@ -94,7 +94,7 @@ import 'swiper/css/pagination'
           pagination={{type : "fraction"}}
           modules={[Navigation, Pagination, Autoplay]}
           autoplay={{delay : 3000}}
-          className="h-[230px] w-full rounded-lg text-white"
+          className="h-[230px] w-[400px] rounded-lg text-white"
         >
           {imageSampah.map((image,index) =>(
             <SwiperSlide key={index}>
