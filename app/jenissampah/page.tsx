@@ -25,7 +25,7 @@ import 'swiper/css/pagination'
           width={50}
           height={80}
           />
-          <h2 className="text-2xl text-center underline-offset-4 my-10">Hasil Produk Kerajinan Sampah</h2>
+          <h2 className="text-2xl text-center underline-offset-4 my-10">Jenis Sampah Anorganik</h2>
           <Image
           src="/images/leaf-4.png"
           alt="leaf"
@@ -57,7 +57,7 @@ import 'swiper/css/pagination'
             </SwiperSlide>
           ))}
         </Swiper>
-        <h2 className="text-3xl text-left underline-offset-4 mt-10">Hasil Kerajinan</h2>
+        <h2 className="text-3xl text-left underline-offset-4 mt-10">Jenis Organik</h2>
         <Swiper
           navigation
           pagination={{type : "fraction"}}
