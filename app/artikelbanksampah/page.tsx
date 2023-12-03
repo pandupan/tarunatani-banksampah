@@ -36,7 +36,7 @@ import 'swiper/css/pagination'
           />
       </div>
 
-      <div className="flex flex-col justify-center pt-[-1] items-center  w-full h-full space-y-8 px-2 mx-auto">
+      <div className="flex flex-col justify-center pt-[-1] items-center  w-[320px] sm:min-w-[430px] h-full space-y-8 px-2 mx-auto">
 
         <h2 className="text-3xl text-left underline-offset-4 mt-10">Artikel Terbaru</h2>
 
@@ -45,7 +45,7 @@ import 'swiper/css/pagination'
           pagination={{type : "fraction"}}
           modules={[Navigation, Pagination, Autoplay]}
           autoplay={{delay : 3000}}
-          className="h-[230px] w-[400px] rounded-lg text-white"
+          className="h-[230px] w-full rounded-lg text-white"
         >
           {imageArtikelBank.map((image,index) =>(
             <SwiperSlide key={index}>
@@ -69,7 +69,7 @@ import 'swiper/css/pagination'
           pagination={{type : "fraction"}}
           modules={[Navigation, Pagination, Autoplay]}
           autoplay={{delay : 3000}}
-          className="h-[230px] w-[400px] rounded-lg text-white"
+          className="h-[230px] w-full rounded-lg text-white"
         >
           {imageDaurUlang.map((image,index) =>(
             <SwiperSlide key={index}>
@@ -94,7 +94,7 @@ import 'swiper/css/pagination'
           pagination={{type : "fraction"}}
           modules={[Navigation, Pagination, Autoplay]}
           autoplay={{delay : 3000}}
-          className="h-[230px] w-[400px] rounded-lg text-white"
+          className="h-[230px] w-full rounded-lg text-white"
         >
           {imageSampah.map((image,index) =>(
             <SwiperSlide key={index}>
